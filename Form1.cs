@@ -15,6 +15,12 @@ namespace Zeus
         public Form1()
         {
             InitializeComponent();
+            var Tarjetas = new ColeccionDeTarjetas(pnlCentral.Controls);
+            Tarjetas.Añadir(new Tarjeta { Titulo = "Ha" });
+            Tarjetas.Añadir(new Tarjeta { Titulo = "He" });
+            Tarjetas.Añadir(new Tarjeta { Titulo = "Hi" });
+            Tarjetas.EliminarPorTitulo("Hiiii");
         }
+
     }
 }
